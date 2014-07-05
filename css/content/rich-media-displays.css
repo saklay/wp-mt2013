@@ -1,0 +1,900 @@
+body {
+	margin: 0px;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+#sae > li {
+	float: left;
+}
+
+ul.list{
+    line-height: 18px;  
+}
+
+ul.list li{
+    float: none;
+}
+
+.sprite{
+    background-image: url('/wp-content/themes/moontoast2013/images/our-clients/sprite.png');
+}
+
+.nav-device-left, .nav-device-right {
+    background-image: url('/wp-content/themes/moontoast2013/images/home-2/home/arrow-sprite.png');
+    background-repeat: no-repeat;
+    display: block;
+    width: 31px;
+    height: 34px;
+    margin-top: 17px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.nav-device-left{
+    background-position: 0 0;
+    visibility: hidden;
+}
+
+.nav-device-left:hover{
+    background-position: 0 -34px;    
+}
+
+.nav-device-right{
+    background-position: -32px 0;
+}
+
+.nav-device-right:hover{
+        background-position: -32px -34px;    
+    }
+
+#letterbox h2{
+    width: 100%;
+    text-align: center;
+    font-size: 41px;
+    color: #525251;
+}
+
+#letterbox .arrow-button2 {
+    margin: 0 auto;
+}
+
+.arrow{
+    width: 62px;
+    height: 31px;
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    margin-left: -31px;
+}
+
+
+.products_container{
+    display: table !important;
+}
+
+.products_container .arrow-button2 {
+    width: 200px;
+    font-size: 20px;
+}
+
+    .products_container .arrow-button2 .arrow-left {
+        width: 150px;
+    }
+
+    .products_container .arrow-button2 .arrow-right {
+        margin-top: 7px;
+    }
+    
+    .demo-button.arrow-button2 {
+        float: right;
+        margin: 40px 20px 0 0;
+    }
+
+#backtotop{
+    width: 144px;
+    height: 39px;
+    background: url('/wp-content/themes/moontoast2013/images/backtop.png') no-repeat left top;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+#contact_form{
+    background: white;
+}
+
+#mt_plus_fb{
+    width: 580px;
+    height: 200px;
+    background-position: -197px -730px;
+    margin: 0 auto;
+}
+
+#header_subnav{
+    
+}
+
+.logo_header {
+	float: left;
+	margin-top: 8px;	
+}
+
+.icon_share {
+	float: right;
+	margin-top: 14px;
+	height: 20px;
+	width: 110px;
+	cursor: pointer;
+	/* TODO: Change this to the wordpress image path. */
+	background: url('/wp-content/themes/moontoast2013/images/header_share.png') no-repeat left top;
+}
+
+.subheader {
+	height: 44px;
+	font-family: "alternate-gothic-no-1-d",Arial,Helvetica,Sans-Serif;
+	font-size: 26px;
+	padding-top: 17px;
+	background: #385963 url('../img/header_background_texture.png');
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
+
+.content {
+	width: 100%;
+}
+
+.image{
+     margin:  0 auto;    
+}
+
+.content_panel {
+	font-family: "museo-slab", Georgia, Time, Times New Roman, Serif;
+        font-size: 100%;
+        width: 100%;
+        margin: 0 auto;
+        clear: both;
+        border-bottom: 1px solid #DEDEDE;
+        position: relative;
+        background: #eeeeee;
+}
+    
+    .content_panel:nth-child(even){
+        background: #f4f4f4;
+    }
+    
+    .content_panel:nth-child(even) .arrow{
+        background: url('/wp-content/themes/moontoast2013/images/fb-landing/border_grey.png') top center no-repeat #f4f4f4;
+        left: 25%;
+    }
+    
+    .content_panel:nth-child(odd) .arrow{
+        background: url('/wp-content/themes/moontoast2013/images/fb-landing/border_white.png') top center no-repeat;
+        left: 79%;
+    }
+    
+    .content_panel:nth-child(odd) .button{
+        clear: both;
+        margin: 0;
+    }
+    
+    .content_panel:nth-child(1) h4, .content_panel:nth-child(1) p{
+        text-align: center;
+    }
+    
+    .content_panel:nth-child(1) .button{
+        float: none;
+        clear: both;
+    }
+    
+    .content_panel:nth-child(odd) .image{
+        text-align: left;
+    }
+    
+    .content_panel:nth-child(even) .image{
+        text-align: right;
+    }
+    
+.content_panel:last-child{
+        border: 0;
+    }
+
+.social_apps_container .content_panel:last-child{
+    border-bottom: none;
+}
+
+    .social_apps_container .nav-device-left{
+        top: 165px;
+        left: 0;
+    }
+    
+    .social_apps_container .nav-device-right{
+        top: 165px;
+        right: 20px;
+    }
+
+.slides {
+	height: 334px;
+	width: 600px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.slides_container {
+	width: 600px;
+	height: 332px;
+	display: none;
+}
+
+.slides_container div {
+	width: 600px;
+	height: 332px;
+	margin: 0 auto;
+	display: block;
+}
+
+.info {
+	clear: both;
+	margin: 0 auto;
+	font-size: 100%;
+	width: 600px;
+}
+
+.info p {
+	margin-bottom: 40px;
+}
+
+.thick_gray_border {
+	border: 5px solid #DEDEDE;
+}
+
+.bottom_shadow {
+	width: 600px;
+	background: #FFFFFF url(/wp-content/themes/moontoast2013/images/fb-landing/bottom_shadow.png) no-repeat;
+	margin: 0 auto;
+	height: 40px;
+}
+
+.center_layout {
+	width: 900px;
+	clear: both;
+	margin: 0 auto;
+}
+
+.center_layout_thanks {
+	width: 450px;
+        clear: both;
+        margin: 20px auto;
+        font-size: 34px;
+        border: 1px solid #DEDEDE;
+	padding-left: 20px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius:5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+        background: white;
+        height: 309px;
+        text-align: center;
+}
+    
+    .center_layout_thanks h2{
+        margin-top: 25%;
+    }
+    
+.center_text {
+	text-align: center;
+}
+
+.module {
+	min-height: 265px;
+	display: table;
+	padding: 200px 0;
+}
+
+.module .text{
+    padding: 10px 20px 0;
+    line-height: 20px;
+}
+
+.module p {
+	margin-bottom: 20px;
+	margin-top: 5px;
+        font-size: 16px;
+}
+
+.module h4 {
+	font-family: "alternate-gothic-no-1-d",Arial,Helvetica,Sans-Serif;
+        font-size: 47px;
+        margin-bottom: 0px;
+        line-height: 40px;
+}
+
+.module .left .module .right {
+	vertical-align: middle;
+	display: table;
+        width: 420px;
+}
+
+.module .left img, .module .right img {
+	vertical-align: middle;
+}
+
+.pagination {
+	width: 44px;
+	margin: 18px auto;
+	clear: both;
+}
+
+.pagination li {
+	float: left;
+	margin: 0 1px;
+}
+
+.pagination li a {
+	display: block;
+	background: #FFFFFF;
+	font-size: 0px;
+	height: 12px;
+	width: 12px;
+	text-decoration: none;
+	margin-right: 6px;
+	border: 1px solid #BBBBBB;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.pagination li.current a {
+	background: #EE3727;
+	border: 1px solid #EE3727;
+}
+
+.smaller {
+	width: 400px;
+}
+
+.invalid {
+	border: 1px solid #CC0000;
+}
+
+#close_contact_form{
+    width: 28px;
+    height: 28px;
+    background: url(/wp-content/themes/moontoast2013/images/prettyphoto/prettyPhoto/light_rounded/sprite.png) no-repeat -1px -1px;
+    width: 75px;
+    height: 22px;
+    position: absolute;
+    top: 2px;
+    right: 1px;
+    cursor: pointer;
+}
+
+#contact{
+    display: none;
+    position: absolute;
+    top: 0;
+    margin-top: 25%;
+    z-index: 9999;
+}
+
+#contact_form{
+	width: 450px;
+	height: 310px;
+	border: 1px solid #DEDEDE;
+	padding-left: 20px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius:5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	margin: 0 auto;
+	margin-top: 20px;
+	font-family: "museo-slab", Georgia, Time, Times New Roman, Serif;
+        -moz-box-shadow: 0px 0px 28px black;
+        -webkit-box-shadow: 0px 0px 28px black;
+        box-shadow: 0px 0px 28px black;
+        position: relative;
+}
+
+#contact_form h3{
+    margin: 10px 0;
+    font-size: 26px;
+}
+
+#contact_form input {
+	width: 200px;
+	height: 25px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	clear: both;
+	float: left;
+}
+
+#contact_form label {
+	display: block;
+	font-size: 14px;
+}
+
+#footer-pmd{
+    background: white url(/wp-content/themes/moontoast2013/images/fb-landing/footer_bkg.png);
+    width: 100%;
+    height: 64px;
+    text-align: center;
+    color: white;
+    line-height: 64px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+    #footer-pmd a{
+        text-decoration: none;
+        color: white;
+    }
+
+.header_content{
+    z-index: 1;
+    height: 200px !important;
+}
+
+    .header_content #header_subnav{
+        height: 70px !important;    
+    }
+    
+.landing_header_inner{
+    position: relative;
+    color: white;
+    font-family: "alternate-gothic-no-1-d",Arial,Helvetica,Sans-Serif;
+    font-size: 42px;
+    text-transform: uppercase;
+    width: 800px;
+    margin: auto;
+}
+
+.lex_phone{
+    background-position: -373px 0;
+    width: 185px;
+    height: 360px;
+}
+
+.input_row {
+	float: left;
+	width: 100%;
+	margin-bottom: 15px;
+	clear: both;
+}
+
+.input_col {
+	float: left;
+	margin-right: 15px;
+}
+
+#overlay{
+    width: 100%;
+    background: black;
+    position: absolute;
+    top: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+    -khtml-opacity: 0.7;
+    opacity: 0.7;
+    z-index: 900;
+}
+
+.phone{
+    width: 200px;
+    height: 370px;
+    background-position: -352px 0px;
+}
+
+.phone_share{
+    width: 180px;
+    height: 370px;
+    background-position: 0 -730px;
+}
+
+.products_container{
+    position: relative;
+}
+
+#products_wrapper{
+    width: 960px;
+}
+
+#sae{
+    margin: auto;
+    display: table;
+}
+
+#sae li{
+    line-height: 15px;
+}
+
+#sae li a{
+    text-decoration: none !important;
+    color: black;
+    height: 37px;
+    padding: 17px 35px;
+    border-left: 1px solid rgba(196,197,198,0.3);
+    border-right: 1px solid rgba(196,197,198,0.3);
+    float: left;
+    text-align: center;
+    width: 125px;
+}
+
+    #sae li a:hover, #sae li a.active{
+        color: white;
+        background-image: url('/wp-content/themes/moontoast2013/images/our-clients/arrow-vert-orange.png');
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        background-color: #ef4323;
+        border-left: 1px solid #a8a8a8;
+        border-right: 1px solid #a8a8a8;
+        text-shadow: 1px 1px #000;
+    }
+
+#submit_contact_form {
+	float: right;
+	margin-right: 30px;
+}
+
+#thanks{
+    display: none;
+    position: absolute;
+    top: 0;
+    margin-top: 25%;
+    z-index: 9999;
+}
+
+.view_content .social_apps_container {
+    width: 960px;
+    height: 420px;
+    float: left;
+    clear: left;
+    background: #eeeeee;
+    margin-top: 200px;
+    position: relative;
+}
+
+    .view_content .social_apps_container > div{
+        float: left;
+        clear: left;
+        width: 960px;
+    }
+.view_content .page_title{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 200;
+    letter-spacing: 0;
+    font-size: 32px;
+    line-height: 60px;
+    width: auto;
+    float: left;
+}
+
+.view_content .page_title_header{
+    float: left;
+    clear: left;
+    margin: 15px 0 0 10px;
+    width: 400px;
+}
+
+/* NAV */
+.navigation_bottom{
+    float: left;
+    clear: both;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.navigation_inner{
+    width: 960px !important;
+    margin:10px auto;
+    padding-top: 20px;
+}
+
+ul.footer_nav{
+    float: left;
+    margin-left: 66px;
+}
+
+ul.footer_nav:first-child{
+    float: left;
+    margin: 0;
+}
+
+ul.footer_nav li{
+    float: none;
+    padding: 0;
+    text-align: left;
+    height: auto !important;
+}
+
+ul.footer_nav li:first-child{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+
+/* IMAGE COORDS */
+.awareness{
+    width: 400px;
+    height: 329px;
+    background-position: 0 -401px;
+}
+
+.consideration{
+    width: 200px;
+    height: 400px;
+    background-position: -369px 0;
+}
+
+.empower{
+    width: 200px;
+    height: 400px;
+    background-position: -369px 0;
+}
+
+.sell_direct{
+    width: 370px;
+    height: 350px;
+    background-position: -428px -404px;    
+}
+
+/* APPS SLIDER */
+#apps-slider{
+    float: left;
+    clear: left;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 200px;
+    background-color: #fff;
+    background-image: url('/wp-content/themes/moontoast2013/images/our-clients/white-grey-shadow.png');
+    background-position: bottom;
+    background-repeat: repeat-x;
+    overflow: hidden;
+}
+
+    #apps-slider .nav-device-left{
+        position: absolute;
+        top: 30%;
+        left: 20px;
+    }
+
+    #apps-slider .nav-device-right{
+        position: absolute;
+        top: 30%;
+        right: 20px;
+    }
+    
+    #apps-slider ul{
+        height: 200px;
+        width: 700px;
+        margin: auto;
+        padding: 0;
+        position: relative;
+    }
+    
+        #apps-slider ul li{
+            float: left;
+            position: relative;
+            height: 200px;
+            width: 120px;
+            padding: 0;
+            margin-right: 25px;
+            cursor: pointer;
+        }
+        
+            #apps-slider ul li:hover, #apps-slider ul li.active{
+                background-color: #f1fbfc;
+                background-image: url('/wp-content/themes/moontoast2013/images/our-clients/arrow-vert-blue.png');
+                background-position: bottom center;
+                background-repeat: no-repeat;
+            }
+            
+            #apps-slider ul li .title{
+                position: absolute;
+                width: 100%;
+                top: 130px;
+                font-family: 'universbold';
+                text-align: center;
+                font-size: 12px;
+                color: #AAA;
+                letter-spacing: 1px;
+            }
+            
+                #apps-slider ul li:hover .title, #apps-slider ul li.active .title{
+                    color: #000;
+                }
+        
+            #apps-slider ul li .icon{
+                position: absolute;
+                width: 85px;
+                height: 85px;
+                top: 40px;
+                left: 20px;
+                background-image: url('/wp-content/themes/moontoast2013/images/our-clients/app-slider-discovery.png');
+                background-repeat: no-repeat;
+            }
+        
+            #apps-slider ul li.c2u .icon{
+                background-position: 10px 6px;
+            }
+            
+            #apps-slider ul li.c2u:hover .icon, #apps-slider ul li.c2u.active .icon{
+                background-position: -67px 5px;
+            }
+            
+            #apps-slider ul li.vid .icon{
+                background-position: -148px 6px;
+            }
+            
+            #apps-slider ul li.vid:hover .icon, #apps-slider ul li.vid.active .icon{
+                background-position: -236px 7px;
+            }
+            
+            #apps-slider ul li.game .icon{
+                background-position: -327px 6px;
+            }
+            
+            #apps-slider ul li.game:hover .icon, #apps-slider ul li.game.active .icon{
+                background-position: -430px 6px;
+            }
+            
+            #apps-slider ul li.vidref .icon{
+                background-position: -522px 6px;
+            }
+            
+            #apps-slider ul li.vidref:hover .icon, #apps-slider ul li.vidref.active .icon{
+                background-position: -609px 5px;
+            }
+            
+            #apps-slider ul li.sweeps .icon{
+                background-position: -698px 6px;
+            }
+            
+            #apps-slider ul li.sweeps:hover .icon, #apps-slider ul li.sweeps.active .icon{
+                background-position: -788px 5px;
+            }
+        
+            #apps-slider ul li:last-child{
+                margin-right: 0;
+            }
+            
+    
+    
+    
+/* APPS PREVIEWER */
+.social_apps_container .right{
+    width: 55%;
+    height: 420px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.social_apps_container .left{
+    width: 45%;
+    height: 420px;
+    margin: 0;
+    padding: 0;
+}
+
+    .social_apps_container .copy{
+        width: 85%;
+        float: left;
+        margin: 0 40px;
+    }
+    
+    .social_apps_container .copy h1{
+        font-family: 'universbold';
+        text-transform: none;
+        letter-spacing: -1px;
+        margin: 20px 0 5px 0;
+        padding: 0;
+    }
+    
+    .social_apps_container .copy p{
+        font-family: Helvetica;
+        line-height: 12px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .social_apps_container .bold{
+        float: left;
+        clear: left;
+    }
+
+.devices{
+    float: left;
+    clear: left;
+    margin: 5px 0 30px 0;
+}
+
+.device-list{
+    position: relative;
+    height: 420px;
+    width: 1920px;
+    overflow: hidden;
+    left: 0;
+}
+
+    .device-list li{
+        display: inline;
+        float: left;
+        width: 480px;
+    }
+
+.device-views{
+    float: left;
+    clear: left;
+    margin: 10px 40px;
+}
+
+    .device-views a{
+        clear: left;
+        float: left;
+    }
+    
+    .device-views .arrow-right{
+        height: 26px;
+    }
+    
+    .device-views .device{
+        float: left;
+        height: 105px;
+        width: 90px;
+        position: relative;
+        opacity: .6;
+        cursor: pointer;
+    }
+        .device-views .device:hover, .device-views .device.active{
+            opacity: 1;
+        }
+    
+    .device-views .devices .desktop{
+        background-position: -42px 0;
+        margin-right: 25px;
+    }
+    
+    .device-views .devices .tablet{
+        background-position: -157px 0;
+    }
+    
+    .device-views .devices .mobile{
+        background-position: -261px 0;
+    }
+    
+    .device-views .device-name{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        font-family: Helvetica;
+    }
+    
+/* DEVICES RIGHT */
+
+.devices-3{
+    width: 100%;
+    height: 420px;
+    background-position: 56px -90px;
+    position: relative;
+}
+    
+        

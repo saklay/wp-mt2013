@@ -1,0 +1,757 @@
+@import lib/mixins
+
+/* Common Layout Styles
+
+
+body
+    font-family: $serif
+    background: image-url('bkg_main.png')
+
+strong, b
+    font-weight: bold  !important
+
+em, i
+    font-style: italic !important
+
+h1, h2, h3
+    font-family: $headerFont
+    letter-spacing: 1px
+
+.error
+    border: 1px solid red
+    
+#breadcrumbs
+    position: absolute
+    top: -30px
+    
+    a
+        color: white
+        text-decoration: underline
+        
+.moonloader
+    width: 100%
+    height: 100%
+    position: absolute
+    overflow: hidden
+    top: 0px
+    left: 0px
+    z-index: 99
+    cursor: progress
+
+.moonloader_graphic
+    width: 100%
+    height: 100%
+    background: transparent image-url("loader.gif") center center no-repeat
+    top: 0px
+    left: 0px
+    position: fixed
+    cursor: progress
+
+.moonloader_background
+    width: 100%
+    height: 100%
+    background: #000
+    @include opacity(0.2)
+    top: 0px
+    left: 0px
+    position: fixed
+    cursor: progress
+
+.page_viewport
+    height: 100%
+    width: 100%
+    left: 0px
+    top: 0px
+    z-index: 1
+
+.page_viewport_inner
+    position: reltative
+    height: 100%
+    width: 100%
+    overflow: auto
+
+.animatable
+    -webkit-transition-duration: 0.8s
+    -moz-transition-duration: 0.4s
+    -o-transition-duration: 0.4s
+    transition-duration: 0.4s
+    -webkit-transition-property: -webkit-transform
+    -moz-transition-property: -moz-transform
+    -o-transition-property: -o-transform
+    transition-property: transform
+
+.panel
+    clear: both
+    position: relative
+    width: 100%
+    top: -10px
+    overflow: hidden
+    z-index: 0
+
+.left
+    float: left
+
+.right
+    float: right
+
+.clearAll
+    clear: both
+
+#footer_signup
+    position: absolute
+    width: 422px
+    right: 0
+    top: 125px
+    padding-top: 20px
+    border-top: 1px solid #1a1b1c
+    
+    form
+        float: right
+        
+    input
+        width: 210px
+        height: 35px
+        float: left
+        background: #232426
+        border: 1px solid black
+        padding-left: 5px
+        color: #7b7c7c
+        outline: none
+        
+    button
+        width: 90px
+        height: 40px
+        float: left
+        background: #ca000d
+        background: -moz-linear-gradient(top,  #ca000d 0%, #b2000c 44%, #92000a 100%)
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ca000d), color-stop(44%,#b2000c), color-stop(100%,#92000a))
+        background: -webkit-linear-gradient(top,  #ca000d 0%,#b2000c 44%,#92000a 100%)
+        background: -o-linear-gradient(top,  #ca000d 0%,#b2000c 44%,#92000a 100%)
+        background: -ms-linear-gradient(top,  #ca000d 0%,#b2000c 44%,#92000a 100%)
+        background: linear-gradient(to bottom,  #ca000d 0%,#b2000c 44%,#92000a 100%)
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca000d', endColorstr='#92000a',GradientType=0 )
+        color: white
+        font-size: 15px
+        text-align: center
+        text-shadow: 1px 1px #000
+        -webkit-border-radius: 3px
+        -moz-border-radius: 3px
+        border-radius: 3px
+        border: none
+
+                
+.page-home
+
+    h1
+        font-size: 48px
+        text-transform: uppercase
+        text-align: center
+        margin-top: 10px
+
+    h2
+        font-size: 17px
+        font-weight: normal
+        text-align: center
+        margin: -5px 0 30px
+        font-family: $serif
+        line-height: 22px
+
+    input[type=text]
+        width: 165px
+        border: 1px solid #e3e3e3
+        font-size: 0.875em
+        font-weight: normal
+        color: #707071
+        background: white
+        padding: 7px 10px
+        margin: 5px 0 10px 0
+        @include border-radius(5px)
+
+    input[type=submit]
+        min-width: 90px
+        font-size: 16px
+        font-weight: normal
+        text-transform: uppercase
+        text-align: center
+        color: white
+        border: none
+        background: #e83e07
+        padding: 3px 10px
+        margin: 17px 0 0 50px
+        cursor: hand
+        font-family: $headerFont
+        @include border-radius(5px)
+
+    select
+        width: 185px
+        border: 1px solid #e3e3e3
+        font-size: 0.875em
+        font-weight: normal
+        color: #707071
+        background: white
+        padding: 7px 10px
+        margin: 5px 0 10px 0
+        @include border-radius(5px)
+
+    .button
+        min-width: 75px
+        font-family: $headerFont
+        letter-spacing: 1px
+        font-size: 18px
+        text-transform: uppercase
+        text-align: center
+        text-decoration: none
+        color: white
+        background: #e83e07
+        padding: 7px 16px
+        margin: 35px 0
+        @include border-radius(5px)
+
+/* Bottom Navigation
+.navigation
+    width: 100%
+    height: 230px
+    background-color: #1e1f20
+    font-size: 16px
+    line-height: 16px
+    text-align: center
+    right: 15px
+    z-index: 999
+    font-family: $sansserif
+    letter-spacing: 1px
+    padding-bottom: 20px
+
+    .copyright
+        color: #988d93
+        line-height: 49px
+        color: white
+        float: left
+            
+    .navigation_inner
+        position: relative
+        width: 100%
+        height: 100%
+                
+    ul.bottomnav
+        width: 900px
+        text-align: left
+        margin-left: auto
+        margin-right: auto
+        margin-top: 0px
+        text-transform: uppercase
+
+    li
+        float: left
+        position: relative
+        padding: 0px 20px
+        height: 37px
+        padding-top: 16px
+        
+    .on_page_item
+        background: #232323
+    
+    a
+        color: #fff
+        text-decoration: none
+        margin-top: 5px
+        display: block
+
+    a:hover
+        color: #eee
+
+    .spacer
+        height: 51px
+        width: 2px
+        border: none
+        padding: 0
+        position: relative
+        top: 0px
+        background: image-url('navspacer.jpg')
+
+    .moontoast_link
+        padding-right: 20px
+        padding-left: 0px
+
+        img
+            position: relative
+            top: -9px
+
+    .share_link
+        padding-right: 0px
+
+    .contact_link
+        padding: 0px
+        margin-top: 16px
+
+        .bubble
+            background: image-url('contact_bg.png')
+            padding: 8px 10px
+            position: relative
+            top: -8px
+            margin-left: 10px
+            height: 20px
+
+        .icon
+            display: block
+            float: left
+            background: transparent
+            height: 14px
+            width: 16px
+            margin-right: 7px
+            margin-top: 5px
+
+        a
+            float: left
+            
+.loading
+    visibility: hidden
+
+.social_icons
+    float: right
+    
+    li
+        padding: 0
+        height: 31px
+        
+    a
+        background: url('/wp-content/themes/moontoast2013/images/social_icons.png') no-repeat left top
+        width: 31px
+        height: 31px
+        
+    a.facebook
+        background-position: 0 0
+    
+    a.twitter
+        background-position: -39px 0
+    
+    a.youtube
+        background-position: -79px 0
+    
+    a.pinterest
+        background-position: -116px 0
+    
+    a.linkedin
+        background-position: -156px 0
+    
+    a.google
+        background-position: -195px 0
+       
+.navigation li ul.children, .icon_share2 ul.children
+    min-width: 100px
+    position: absolute
+    left: 5px
+    bottom: 75px
+    background: #111
+    padding: 5px
+    overflow: visible
+    white-space: nowrap
+    display: none
+    bottom: -30px
+    @include opacity(0)
+    @include border-radius(5px)
+    
+    li
+        display: block
+        float: none
+        padding: 8px
+        background: #1c1c1c
+        clear: both
+        height: 12px
+        
+        a
+            margin: 0
+            
+    .tail
+        background: transparent image-url('dropdowntail.png') no-repeat top center
+        width: 17px
+        height: 11px
+        padding: 0
+        margin: 0 auto
+        margin-top: -10px
+        bottom: -16px
+    
+    .spacer
+        height: 1px
+        border: none
+        border-top: solid 1px #0e0e0e
+        background: #2d2d2d
+        width: 100%
+        padding: 0
+        margin: 0
+        top: 0px
+
+    .spacer:last-child
+        height: 0px !important
+        border-top: 0px !important
+
+.share_link
+    width: 95px
+    padding: 0px
+
+    .icon
+        width: 12px
+        height: 16px
+        float: left
+        margin-top: 3px
+        margin-right: 3px
+        background: image-url('icon_share.png')
+
+    a
+        float: left
+
+.children .page_item
+
+    a
+        color: #fff
+        text-decoration: none
+        margin-top: 5px
+        display: block
+
+    .icon
+        height: 15px
+        width: 15px !important
+        display: block
+        float: left
+        padding-right: 5px
+        margin-top: 0px !important
+        background-image: image-url('social_icons.png') !important
+        background-repeat: no-repeat !important
+
+    .adthis_button_facebook .icon
+        background-position: 0px -3px
+
+    .adthis_button_twitter .icon
+        background-position: 0px -30px
+
+    .adthis_button_googleplus .icon
+        background-position: 0px -57px
+
+    .adthis_button_tumblr .icon
+        background-position: 0px -85px
+
+    .adthis_button_linkedin .icon
+        background-position: 0px -112px
+
+    .adthis_button_pinterest .icon
+        background-position: 0px -140px
+
+/* Side Navigation
+.side_navigation
+    position: fixed
+    bottom: 200px
+    right: 100px
+    z-index: 999
+
+    a
+        display: block
+        background: #fff
+        border: solid 1px #bbb
+        height: 16px
+        width: 16px
+        margin-bottom: 5px
+        @include border-radius(10px)
+
+    .current
+        background: #ee3727
+        border: solid 1px #ee3727
+
+/* Logo
+.logo_moontoast_container
+    width: 940px
+    margin: auto
+    position: relative
+    z-index: 2
+
+.logo_moontoast
+    background: transparent image-url('logo_big.png')
+    width: 326px
+    height: 81px
+    margin: 0px
+    margin-bottom: 35px
+    top: -60px
+    position: absolute
+    left: -10px
+
+/* Content Header
+.content_header
+    width: 100%
+    height: 82px
+    clear: both
+    display: block
+    text-align: center
+    background: #1f2021
+
+.content_header_inner
+    width: 960px
+    margin: auto
+    text-align: left
+
+    .header_share
+        float: right
+        top: 14px
+        height: 17px
+        width: 111px
+        background: image-url('header_share.png') no-repeat left top
+
+        .children
+            left: 10px !important
+    
+.logo_header
+    float: left
+    margin-top: 8px
+
+.icon_share2
+    width: 34px
+    height: 34px
+    background: transparent image-url('icon_share2.png') no-repeat
+    display: block
+    position: relative
+    cursor: pointer
+
+    .children
+        opacity: 1 !important
+        display: block !important
+        top: 50px !important
+        left: -40px !important
+        z-index: 9 !important
+        text-transform: uppercase !important
+        height: 180px !important
+        width: 105px !important
+        font-size: 18px !important
+        line-height: 16px
+        font-family: $sansserif
+        letter-spacing: 1px
+
+        a
+            color: #fff
+
+        .tail
+            top: -1px !important
+            width: 17px !important
+            position: absolute !important
+            left: 50px !important
+            background: image-url('dropdowntail_up.png') !important
+
+/* Subscribe
+.header_right
+    float: right
+    width: 588px
+    text-align: left
+    
+    ul
+        list-style-type: none
+        float: right
+        height: 82px
+        
+    li
+        float: left
+        display: inline
+        
+    a
+        height: 82px
+        float: left
+        color: white
+        text-decoration: none
+        padding: 0 20px
+        line-height: 76px
+        font-size: 15px
+            
+        &:hover
+            background: #2b2c2c
+        
+#mc_embed_signup
+    width: 450px
+    float: left
+    background: image-url('header_divider.png') no-repeat right 6px
+    padding-right: 16px
+    height: 44px
+
+    .sign_up_title
+        font-family: $serif
+        color: #fff
+        position: relative
+        top: 14px
+        float: left
+
+    #mc-embedded-subscribe-form
+        float: right
+        display: block
+
+    .form_submit_button
+        height: 27px
+        width: 82px
+        float: right
+        background: #ee4326
+        position: relative
+        top: 8px
+
+        #mc-embedded-subscribe
+            color: #FFFFFF
+            font-size: 15px
+            width: 100%
+            background: transparent
+            height: 100%
+            border: 0px
+            cursor: pointer
+            text-transform: uppercase
+            font-family: $headerFont
+            letter-spacing: 1px
+
+    .form_textfield
+        height: 26px
+        width: 131px
+        background: #dddddd
+        float: right
+        position: relative
+        top: 8px
+
+        input
+            width: 100%
+            background: transparent
+            height: 100%
+            border: 0px
+            margin-left: 7px
+
+.main_container
+    font-family: $serif
+    font-size: 14px
+    line-height: 1.6em
+
+.icon_share2_inner
+    width: 110px
+    height: 20px
+    cursor: pointer
+    position: absolute
+    
+.top_footer
+    width: 100%
+    height: 80px
+    position: fixed
+    top: -80px
+    z-index: 99999
+    background: #fff
+    
+    .new_links
+        float: left
+        width: 375px
+        margin-left: 30px
+        margin-top: 15px
+        margin-right: 0
+        color: #262626
+        font-size: 12px
+        line-height: 20px
+        
+        .copyright
+            color: #988d93
+            line-height: 49px
+            
+        a
+            color: #262626
+            text-decoration: none
+        
+        a:hover
+            color: #282a2a
+            text-decoration: none
+    
+    .new_icons
+        float: right
+        width: 220px
+        margin-right: 30px
+        margin-top: 30px
+        margin-left: 0
+        
+        
+#contact_form_1
+    width: 676px
+    height: 722px
+    background: url('/wp-content/images/ol_type_1.png') no-repeat left top
+    z-index: 9999
+    position: absolute
+    display: none
+
+#contact_form_2
+    width: 676px
+    height: 722px
+    background: url('/wp-content/images/ol_type_2.png') no-repeat left top
+    z-index: 9999
+    position: absolute
+    display: none
+    
+.contact_form
+
+    table
+        width: 500px
+        margin-top: 200px
+        margin-left: 85px
+    
+    input
+        width: 237px
+        height: 30px
+        -webkit-border-radius: 5px
+        -moz-border-radius: 5px
+        border-radius: 5px
+        color: #444444
+        font-style: italic
+        margin-bottom: 13px
+    
+    select
+        width: 499px
+        height: 30px
+        background: #979899
+        margin-bottom: 13px
+        color: white
+        border: none
+    
+    textarea
+        width: 495px
+        height: 150px
+        margin-bottom: 20px
+    
+.contact_form tr > td:first-child > input
+    margin-right: 10px
+
+.FormSubmitButton
+    float: right
+    margin-right: 20px !important
+    width: 133px !important
+    height: 36px
+    background: url('/wp-content/images/send_button.png') no-repeat left top
+    color: white !important
+    font-size: 16px !important
+    font-style: normal !important
+    text-shadow: 1px 1px #000
+    text-transform: uppercase
+    padding-left: 28px
+    line-height: 27px
+    text-align: left
+    
+#overlay
+    width: 100%
+    background: black
+    position: absolute
+    top: 0
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"
+    filter: alpha(opacity=70)
+    -moz-opacity: 0.7
+    -khtml-opacity: 0.7
+    opacity: 0.7
+    z-index: 900
+    left: 0
+    display: none
+    
+.close_button
+    width: 26px
+    height: 25px
+    background: url('/wp-content/images/close_button.png') no-repeat left top
+    position: absolute
+    top: 58px
+    right: 58px
+    cursor: pointer
+    
+#thankyou
+    width: 676px
+    height: 289px
+    background: url('/wp-content/images/thankyou.png') no-repeat left top
+    display: none
+    position: absolute
+    z-index: 9999

@@ -1,0 +1,41 @@
+@import lib/mixins
+
+
+.panel_video
+    height: 745px
+    overflow: visible
+    z-index: auto
+
+.computer .panel_video
+    @include parallax-bg(#fafafa, 'background_video.jpg', no-repeat center center fixed)
+
+.mobile .panel_video
+    background: image-url('background_video.jpg') no-repeat top right
+
+.panel05_tv
+    width: 841px
+    height: 565px
+    position: relative
+    top: 225px
+    margin: 0px auto
+    z-index: 1
+    cursor: pointer
+
+.computer .panel05_tv
+    @include parallax-bg(transparent, 'panel05_tv.png', no-repeat center bottom scroll)
+
+.mobile 
+
+    .panel_video
+        height: 629px
+
+    .panel05_tv
+        top: 100px
+        background: image-url('panel05_tv.png') no-repeat center center
+        
+#overview_video
+    position: relative
+    left: 60px
+    top: 65px
+    width: 742px
+    height: 419px

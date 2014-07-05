@@ -1,0 +1,605 @@
+body {
+    background-image: url('/wp-content/themes/moontoast2013/images/home-2/home/bg.png');
+    background-repeat: repeat;
+}
+
+.row {
+    width: 970px;
+    margin: 0 auto 0 auto;
+}
+
+/* HEADER */
+
+.header {
+    background-color: #666666;
+    height: 443px;
+
+    overflow: hidden;
+    position: relative;
+}
+
+    .header .hero-container {
+        overflow: hidden;
+        width: 100%;
+        height: 443px;
+
+        background-color: #000000;
+        z-index: 1;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+        .header .hero-container .hero-bg {
+            width: 100%;
+            height: 443px;
+
+            margin: 0 auto 0 auto;
+            overflow: hidden;
+        }
+
+        .header .hero-container .hero-bg img {
+            left: 0;
+            top: 0;
+
+            position: absolute;
+
+            width: 100%;
+            min-width: 1200px;
+            height: auto;
+
+        }
+
+        .header .slides .slide {
+            position: relative;
+        }
+
+        .header .slides .slide .selector {
+            position: absolute;
+            z-index: 2;
+            left: 50%;
+            margin-left: -45px;
+            top: 330px;
+        }
+
+        .header .slides .page-selector {
+            background-image: url('/wp-content/themes/moontoast2013/images/home-2/home/hero-select.png');
+            background-position: 0 -17px;
+            background-repeat: no-repeat;
+
+            display: inline-block;
+
+            width: 17px;
+            height: 17px;
+            margin: 0 2px 0 2px;
+        }
+
+        .header .slides .active, .header .slides .page-selector:hover {
+            background-position: 0 0;
+        }
+    
+    .header .slides {
+        position: relative;
+        z-index: 1;
+    }
+
+    .header .slides .left-nav {
+        float: left;
+        display: block;
+
+        background-image: url('/wp-content/themes/moontoast2013/images/home-2/home/hero-scroll.png');
+        background-repeat: no-repeat;
+        width: 56px;
+        height: 95px;
+        margin-top: 138px;
+    }
+
+    .header .slides .right-nav {
+        float: right;
+        display: block;
+
+        background-image: url('/wp-content/themes/moontoast2013/images/home-2/home/hero-scroll.png');
+        background-repeat: no-repeat;
+        background-position: -56px 0;
+        width: 56px;
+        height: 95px;
+        margin-top: 138px;
+    }
+
+        .header .contact_slide {
+            position: relative;
+            z-index: 1000;
+        }
+        
+        .header .contact_slide .left {
+            float: left;
+            width: 650px;
+            padding-top: 100px;
+            margin-left: 200px;
+        }
+        
+        .header .contact_slide h1 {
+            font-size: 65px;
+            color: #FFFFFF;
+            letter-spacing: -1px;
+            font-family: "alternate-gothic-no-1-d",Arial,Helvetica,Sans-Serif;
+            text-shadow: 2px 2px 0px #000;
+            text-align: center;
+        }
+
+        .header .contact_slide p {
+            font-size: 28px;
+            color: #FFFFFF;
+            line-height: 20px;
+            margin-top: 10px;
+            font-family: "alternate-gothic-no-1-d",Arial,Helvetica,Sans-Serif;
+            text-shadow: 1px 1px 0px #000;
+            text-align: center;
+        }
+        
+        .header .slide {
+            position: relative;
+        }
+
+        .header .slide .left {
+            float: left;
+            width: 560px;
+            padding-top: 40px;
+            margin-left: 20px;
+        }
+
+        .header .slide .right {
+            float: right;
+            width: 270px;
+            height: 363px;
+
+            right: 75px;
+
+            position: absolute;
+
+            background-image: url('/wp-content/themes/moontoast2013/images/home-2/home/hero-phone.png');
+            background-position: right bottom;
+            background-repeat: no-repeat;
+        }
+
+        .header .slide h1 {
+            font-size: 50px;
+            color: #FFFFFF;
+            letter-spacing: -1px;
+            font-family: lft-etica;
+            text-shadow: 2px 2px 0px #000;
+        }
+
+        .header .slide p {
+            font-size: 18px;
+            color: #FFFFFF;
+            width: 400px;
+            line-height: 20px;
+            margin-top: 10px;
+            font-family: lft-etica;
+            text-shadow: 1px 1px 0px #000;
+            width: 395px;
+        }
+
+        .header .slide .arrow-button {
+            width: 220px;
+            margin-top: 20px;
+            font-size: 22px;
+        }
+
+        .header .slide .arrow-button .arrow-left {
+            width: 170px;
+            font-size: 18px;
+            padding: 15px 0 15px 0;
+        }
+
+        .header .slide .arrow-button .arrow-right {
+            background-image: url('/wp-content/themes/moontoast2013/images/home-2/widgets/button-arrow-large.png');
+            width: 46px;
+            height: 26px;
+            margin-top: 11px;
+        }
+
+            /* SLIDE SPECIFIC */
+
+            .header .slide-1 h1 {
+                font-size: 45px;
+            }
+
+            .header .slide-2 .left {
+                width: 410px;
+            }
+
+            .header .slide-2 h1 {
+                font-size: 30px;
+            }
+
+            .header .slide-2 .right {
+                width: 401px;
+
+                background-image: url('/wp-content/themes/moontoast2013/images/home-2/home/hero-2-right.png');
+            }
+
+            .header .slide-3 .left {
+                width: 460px;
+            }
+
+            .header .slide-3 h1 {
+                font-size: 35px;
+            }
+
+            .header .slide-3 .arrow-button {
+                width: 270px;
+            }
+
+            .header .slide-3 .arrow-button .arrow-left {
+                width: 220px;
+            }
+
+            .header .slide-3 .right {
+                width: 377px;
+                background-image: url('/wp-content/themes/moontoast2013/images/home-2/home/hero-3-right.png');
+                background-position: right center;
+            }
+
+            .header .slide-4 .left {
+                width: 370px;
+            }
+
+            .header .slide-4 h1 {
+                font-size: 30px;
+            }
+
+                .header .slide-4 h1 .orange {
+                    color: #ed4422;
+                }
+
+            .header .slide-4 .right {
+                width: 430px;
+
+                background-image: url('/wp-content/themes/moontoast2013/images/home-2/home/hero-4-right.png');
+            }
+
+            .header .slide-5 .left {
+                width: 430px;
+            }
+
+            .header .slide-5 h1 {
+                font-size: 50px;
+            }
+
+            .header .slide-5 .arrow-button {
+                width: 335px;
+            }
+
+            .header .slide-5 .arrow-button .arrow-left {
+                width: 285px;
+            }
+
+            .header .slide-5 .right {
+                width: 315px;
+
+                background-image: url('/wp-content/themes/moontoast2013/images/home-2/home/hero-5-right.png');
+            }
+
+    .header .hero-image {
+        position: absolute;
+    }
+
+    .header .strip {
+        background-image: url('/wp-content/themes/moontoast2013/images/home-2/home/header-bg.png');
+        background-repeat: repeat;
+
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        height: 80px;
+    }
+
+.header_contactus {
+    height: 331px !important;
+}    
+
+/* CONTACT US */
+
+.contactus_container {
+	width: 900px;
+	margin: 0 auto;
+}
+
+.contactus_container .geninquiry {
+	float: left;
+	width: 545px;
+}
+
+.contactus_container .contactsales {
+	float: right;
+	width: 300px;
+}
+
+.contactus_container .heading2 {
+	letter-spacing: -1px;
+	margin: 20px 0 10px 0;
+	font-size: 24px;
+        font-family: inherit;
+
+}
+
+.contactus_container form {
+	margin: 20px 0;
+}
+
+.contactus_form {
+	float: left;
+	width: 265px;
+}
+
+.marginleft10 {
+	margin-left: 10px;
+}
+
+.contactus_container input[type="submit"] {
+	border: none;
+	background: transparent url('/wp-content/themes/moontoast2013/images/btcontactus_send.png');
+	width: 134px;
+	height: 38px;
+	text-indent: -9999px;
+	cursor: pointer;
+	cursor: hand;
+	float: right;
+}
+
+.contactus_form input[type="text"] {
+	background: #f0f0f0;
+	border: 1px solid #a4a4a4;
+	padding: 7px 5px;
+	width: 250px;
+	font-size: 14px;
+	font-style: italic;
+	color: #444;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+.contactus_form select {
+	background: #f0f0f0;
+	border: 1px solid #a4a4a4;
+	padding: 7px 5px;
+	width: 535px;
+	font-size: 14px;
+	font-style: italic;
+	color: #444;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+.contactus_form textarea {
+	background: #f0f0f0;
+	border: 1px solid #a4a4a4;
+	padding: 7px 5px;
+	width: 525px;
+	height: 150px;
+	font-size: 14px;
+	font-style: italic;
+	color: #444;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+.ourHQ {
+	width: 260px;
+	float: left;
+	font-size: 18px;
+}
+
+.ourHQ .heading2 {
+	letter-spacing: -1px;
+	margin: 5px 0;
+	font-size: 24px;
+	padding: 0;
+	border: none;
+}
+
+.icon_callus {
+	background: transparent url('/wp-content/themes/moontoast2013/images/icon_callus.png') top left no-repeat;
+	height: 34px;
+	padding-left: 45px;
+	font-size: 30px;
+	margin: 15px 0;
+}
+
+
+
+/* HOME PAGE */
+
+.home {
+
+}
+
+    .home .heading2, .home .heading3 {
+        letter-spacing: -1px;
+    }
+
+    .home .home-header {
+        margin-top: 40px;
+    }
+
+    .home .row {
+        width: 900px;
+    }
+
+    .home .column {
+        background-image: url('/wp-content/themes/moontoast2013/images/home-2/home/divider.png');
+        background-repeat: no-repeat;
+        background-position: right center;
+
+        padding: 20px 13px 0 12px;
+        /* need to force a height on here to align buttons on bottom */
+        height: 190px;
+        float: left;
+
+        position: relative;
+    }
+
+        .home .column.last {
+            background-image: none;
+        }
+
+        .home .column.hover {
+            background-image: url('/wp-content/themes/moontoast2013/images/home-2/home/divider.png'), url('/wp-content/themes/moontoast2013/images/home-2/home/column-hover.png');
+            background-repeat: no-repeat;
+            background-position: right center, center center;
+        }
+
+        .home .column.hover.last {
+            background-image: url('/wp-content/themes/moontoast2013/images/home-2/home/column-hover.png');
+            background-repeat: no-repeat;
+            background-position: center center;   
+        }
+
+        .home .column .inner {
+            width: 275px;
+        }
+
+        .home .column .heading2 {
+            margin: 20px 0 10px 0;
+            font-size: 19px;
+        }
+
+        .home .column p {
+            font-size: 14px;
+            color: #404040;
+            line-height: 16px;
+            display: inline;
+        }
+
+        .home .column .arrow-button {
+            position: absolute;
+            right: 15px;
+            bottom: 20px;
+        }
+
+    .home .clients {
+        margin: 20px 0 0 0;
+    }
+
+        .home .clients .arrow {
+            background-image: url('/wp-content/themes/moontoast2013/images/home-2/home/arrow-sprite.png');
+            background-repeat: no-repeat;
+
+            display: block;
+            width: 31px;
+            height: 34px;
+
+            margin-top: 17px;
+        }
+
+        .home .clients .arrow-left {
+            float: left;
+        }
+
+        .home .clients .arrow-left:hover {
+            background-position: 0 -34px;
+        }
+
+        .home .clients .arrow-right {
+            background-position: -32px 0;
+
+            float: right;
+        }
+
+        .home .clients .arrow-right:hover {
+            background-position: -32px -34px;
+        }
+
+            .home .clients .client-logos {
+                float: left;
+
+                width: 810px;
+                height: 100px;
+                margin-left: 15px;
+
+                position: relative;
+                overflow: hidden;
+            }
+
+                .home .clients .client-logos ul {
+                    position: absolute;
+                }
+
+                .home .clients .client-logos li {
+                    float: left;
+
+                    margin: 0 15px 0 15px;
+                }
+
+    .home .story {
+        width: 254px;
+        border: 1px solid #bbafaf;
+        float: left;
+        margin: 25px 18px 0 18px;
+        position: relative;
+        min-height: 350px;
+        background: white;
+    }
+
+        .home .story .top .date {
+            position: absolute;
+            left: -6px;
+            top: 8px;
+
+            height: 41px;
+            width: 60px;
+
+            background-image: url('/wp-content/themes/moontoast2013/images/home-2/home/story-date-bg.png');
+            background-repeat: no-repeat;
+            background-position: left bottom;
+        }
+
+            .home .story .top .date {
+                text-align: center;
+                font-size: 12px;
+                color: #404040;
+            }
+
+            .home .story .top .date .inner {
+                height: 35px;
+
+                background-color: #fafafa;
+
+                border: 1px solid #bbafaf;
+            }
+
+            .home .story .top .date .day {
+                color: #d76330;
+                font-size: 17px;
+
+                margin: 2px 0 1px 0;
+            }
+
+        .home .story .bottom {
+            padding: 10px;
+            background-color: #fafafa;
+        }
+
+            .home .story .bottom .author {
+                margin: 2px 0 15px 0;
+            }
+
+            .home .story .bottom p a {
+                font-size: 14px;
+                color: #404040;
+            }
+
+            .home .story .bottom p .readmore {
+                color: #ff0b0b;
+            }

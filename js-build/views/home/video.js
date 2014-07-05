@@ -1,0 +1,1 @@
+define(["jquery","underscore","backbone","mobiledetection","parallax","localscroll"],function(e,t,n,r,i,s){return n.View.extend({el:"#panel_5",render:function(){this.setElement(e("#panel_5:last"));var t=this.$el.find(".panel05_tv"),n=this;r.any()||this.$el.parallax("bottom",-0.2)}})})

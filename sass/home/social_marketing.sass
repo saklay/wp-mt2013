@@ -1,0 +1,128 @@
+@import lib/mixins
+
+
+.panel_social_marketting
+    background: #fafafa
+    height: 900px
+
+    strong
+        font-weight: bold
+
+    em
+        font-style: italic
+
+    .panel_social_marketting_inner
+        width: 960px
+        padding-top: 140px
+        height: 675px
+        margin: auto
+        position: relative
+    
+    .social_marketing_container
+        width: 1000px
+        margin: 0 auto
+        margin-top: 60px
+        
+        .content
+            float: left
+            width: 340px
+            margin: 115px 0 0 15px
+            margin-top: 115px
+            color: #202020
+            font-family: $serif
+            font-size: 16px
+            font-weight: normal
+            line-height: 25px
+
+            p
+                font-family: Georgia, Times, Times New Roman, Serif
+                font-size: 14px
+                line-height: 21px
+                font-style: italic
+
+            .finished_circles
+                width: 234px
+                height: 229px
+                position: absolute
+                left: 38px
+                top: 260px
+                
+            .finished_circles_inner
+                position: relative
+                top: 0px
+                left: 0px
+                width: 100%
+                height: 100%
+
+                div
+                    position: absolute
+                    top: 0px
+                    left: 0px
+                    width: 100%
+                    height: 100%
+                    @include opacity(0)
+
+                .circle_marketing
+                    background: image-url('final_marketing.png')
+
+                .circle_commerce
+                    background: image-url('final_commerce.png')
+
+                .circle_analytics
+                    background: image-url('final_analytics.png')
+
+                .circle_arrow
+                    background: image-url('final_arrow.png')
+
+            .social_marketing
+                width: 306px
+                height: 32px
+                margin: 0px
+                margin-bottom: 20px
+                overflow: hidden
+                position: relative
+
+                .social_word
+                    width: 116px
+                    height: 32px
+                    background: transparent image-url('social_headers.png')
+                    position: absolute
+                    top: 0px
+                    left: 0px
+
+                .social_messages
+                    width: 190px
+                    height: 128px
+                    background: transparent image-url('social_headers.png') -116px 0px
+                    position: absolute
+                    top: 0px
+                    right: 0px
+               
+    .monitor
+        position: absolute
+        bottom: 60px
+        right: 60px
+    
+    .ipad
+        position: absolute
+        bottom: 50px
+        right: 20px
+        
+    .smartphone
+        position: absolute
+        bottom: 50px
+        right: 5px
+
+.scroll_up_container
+    width: 160px
+    float: right
+    clear: both
+    text-align: center
+
+    img
+        margin-bottom: 10px
+
+    span
+        font-family: $serif
+        font-size: 16px
+        display: block

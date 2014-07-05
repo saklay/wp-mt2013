@@ -1,0 +1,57 @@
+@import lib/mixins
+
+
+.panel_frisbee
+    height: 1060px
+    position: relative
+
+.computer
+    position: relative
+
+    .frisbee
+        width: 100%
+        height: 100%
+        position: absolute
+        left: 0px
+        top: 0px
+
+    .frisbee_1
+        @include parallax-bg(#fafafa, 'background_frisbee.jpg', no-repeat left top fixed)
+        visibility: hidden
+
+    .frisbee_2
+        @include parallax-bg(#fafafa, 'background_frisbee2.jpg', no-repeat left top fixed)
+        visibility: visible
+
+    .frisbee_3
+        @include parallax-bg(#fafafa, 'background_frisbee3.jpg', no-repeat left top fixed)
+        visibility: hidden
+
+    .frisbee_4
+        @include parallax-bg(#fafafa, 'background_frisbee4.jpg', no-repeat left top fixed)
+        visibility: hidden
+
+    .frisbee_5
+        @include parallax-bg(#fafafa, 'background_frisbee5.jpg', no-repeat left top fixed)
+        visibility: hidden
+
+    .frisbee_6
+        @include parallax-bg(#fafafa, 'background_frisbee6.jpg', no-repeat left top fixed)
+        visibility: hidden
+
+.mobile 
+
+    .panel_frisbee
+        background: image-url('background_frisbee.jpg') no-repeat top left
+        height: 853px
+
+    .panel04_bubble
+        bottom: 670px
+
+.panel04_bubble
+    background: image-url('panel04_bubble.png') no-repeat
+    width: 549px
+    height: 124px
+    position: absolute
+    bottom: 450px
+    right: 60px

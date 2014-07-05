@@ -1,0 +1,616 @@
+@import lib/mixins
+
+
+.compatible_with
+  text-align: right
+
+  .text_left
+    color: #CCC
+    position: relative
+    top: -7px
+      font-family: $serif
+
+.page_back
+  position: fixed
+  display: block
+  left: 0px
+  top: 40%
+  width: 59px
+  height: 94px
+  cursor: pointer
+  background: image-url('back_arrow.png')
+
+.no_border
+  border: 0px none !important
+
+.pad_top
+  margin-top: 25px
+  clear: both
+
+.view_content
+  line-height: 1
+
+  h1, h2, h3, h4, h5, h6
+    clear: both
+    font-weight: normal
+
+  ol, ul
+    list-style: none
+
+  blockquote
+    quotes: none
+    &:before, &:after
+      content: ''
+      content: none
+
+  del
+    text-decoration: line-through
+
+  table
+    border-collapse: collapse
+    border-spacing: 0
+
+  a img
+    border: none
+
+  html, body
+    margin: 0
+    padding: 0
+
+  p
+    margin: 10px 0
+
+  a
+    outline: none
+    color: #FA3F01
+
+  body
+    font-family: Arial, Helvetica, Verdana, sans-serif
+    background: #f7f7f7
+    font-size: .938em
+    color: #464646
+    line-height: 130%
+
+  h1, h2, h3, h4, h5, h6
+    line-height: 120%
+
+  h1
+    text-transform: uppercase
+    font-size: 2.8em
+    margin: 20px 0 10px 0
+
+  h2
+    font-size: 2.375em
+    color: #252525
+    margin: 10px 0 0
+
+  h3
+    font-size: 2em
+    line-height: 22px
+    color: #252525
+
+  h4
+    font-size: 1.25em
+    color: #252525
+
+  hr
+    background-color: #e1e1e1
+    border: 0
+    width: 100%
+    height: 1px
+    margin: 30px 5px 10px 5px
+
+  blockquote
+    font-family: Georgia, Times New Roman, serif
+    font-style: italic
+    font-size: 1.25em
+    margin: 20px
+
+  .bold
+    font-weight: bold
+
+  .clearboth, .clearAll
+    clear: both
+
+  .left
+    float: left
+
+  .right
+    float: right
+
+  .hidden
+    display: none
+
+  .alignright
+    float: right
+    padding: 10px
+
+  .alignleft
+    float: left
+    padding: 10px
+
+  .aligncenter
+    display: block
+    margin-left: auto
+    margin-right: auto
+
+  .blog_article
+    ul, ol
+      margin: 10px 25px
+      padding: 0
+
+  .entry
+    ul, ol
+      margin: 10px 25px
+      padding: 0
+
+  .blog_article ul, .entry ul
+    list-style-type: disc
+
+  .blog_article ul, .entry ul
+    list-style-type: square
+
+  .blog_article ul, .entry ul
+    list-style-type: circle
+
+  .blog_article ol, .entry ol
+    list-style-type: decimal
+
+  .blog_article ol, .entry ol
+    list-style-type: lower-latin
+
+  /*** Containers **
+
+  .main_container
+    width: 960px
+    margin: 0 auto
+    background: #fff
+
+  .social_apps_container
+    width: 1100px
+    margin: 0 auto
+
+  /*** Header **
+
+  .header
+    width: 100%
+    height: 90px !important
+
+  .header_blog_image
+    width: 135px
+    height: 160px
+    margin: 0 auto
+
+  .header_social_apps_image
+    width: 960px
+    height: 95px !important
+    margin: 0 auto
+
+  .header_social_apps_image_inner
+    width: 95px
+    height: 160px
+    
+  .header_content
+    display: table
+    padding: 0
+    width: 960px
+    height: 164px
+    background: image-url('header_content_background.png')
+    position: relative
+    top: 0
+
+    #header_subnav
+      position: absolute
+      width: 100%
+      height: 50px
+      bottom: 0
+      left: 0
+      background: image-url('black_trans.png')
+      border-top: 1px solid #a8a8a8
+      border-bottom: 1px solid #a8a8a8
+        
+  .page_title
+    text-transform: uppercase
+    font-size: 50px
+    color: #323232
+    text-align: left
+    position: relative
+    top: 27px
+    font-family: $headerFont
+    letter-spacing: 2px
+    width: 800px
+    padding: 0 10px
+
+  .header_blog
+    background: transparent image-url('background_blog.png') repeat-x
+
+  .header_social_apps
+    background: #3d606b image-url('header_background_texture.png')
+    height: 367px !important
+    border-bottom: 1px solid white
+
+  /*** Blog **
+
+  .blog_listings
+    width: 895px !important
+    padding: 27px 26px 32px 19px
+    border-left: 1px solid #e3e3e3
+    border-right: 1px solid #e3e3e3
+
+  .date_comments_box
+    width: 60px
+    float: left
+    margin-right: 34px
+
+  .date_box
+    width: 60px
+    height: 60px
+    background: transparent image-url('date_box.png') no-repeat
+    display: block
+    color: #f7f7f7
+    margin-bottom: 10px
+
+  .date_month
+    text-align: center
+    font-size: 10px
+    font-weight: bold
+    text-transform: uppercase
+    line-height: 10px
+    padding: 12px 0 4px 0
+
+  .date_day
+    text-align: center
+    font-size: 20px
+
+  .comments_box
+    width: 28px
+    height: 25px
+    background: transparent image-url('comments_box.png') no-repeat
+    display: block
+    color: #f7f7f7
+    text-align: center
+    font-size: 11px
+    font-weight: bold
+    margin-left: 15px
+
+  .blog_summary
+    width: 713px
+    float: left
+    margin-top: 15px
+    h1
+      font-size: 24px
+      text-transform: uppercase
+      line-height: 25px
+      margin: 0
+      padding: 0
+    .author
+      font-size: 10px
+    p a
+      color: #ee4326
+      text-decoration: underline
+
+  .icon_tag
+    width: 100%
+    height: 14px
+    background: transparent image-url('icon_tag.png') no-repeat
+    padding-left: 20px
+    a
+      color: #333
+      font-size: 12px
+      text-decoration: underline
+
+  .like_share_box
+    width: 60px
+
+  .icon_like
+    width: 25px
+    height: 25px
+    background: transparent image-url('icon_like.png') no-repeat
+    text-indent: -9999px
+    display: block
+
+  .icon_share
+    width: 25px
+    height: 25px
+    background: transparent image-url('icon_share.png') no-repeat
+    text-indent: -9999px
+    display: block
+
+  /*** Social Apps **
+
+  .products_container
+    width: 960px
+    background: #fff
+    padding: 0
+    min-height: 500px
+    
+  #products_wrapper
+    margin: -300px auto 0 auto
+    background: white
+    -webkit-box-shadow: 0px 0px 10px rgba(50, 50, 50, 0.5)
+    -moz-box-shadow:    0px 0px 10px rgba(50, 50, 50, 0.5)
+    box-shadow:         0px 0px 10px rgba(50, 50, 50, 0.5)
+    
+  .product_box
+    float: left
+    border: 1px solid #e5e5e5
+    padding: 3px
+    margin: 5px 5px 5px 0
+    position: relative
+    width: 142px
+    height: 109px
+    overflow: hidden
+    position: relative
+
+    img
+      cursor: pointer
+      width: 140px
+      position: absolute
+
+    .title_hidden
+      position: absolute
+      cursor: pointer
+      bottom: 2px
+      padding: 7px 10px
+      background: #000
+      color: #fff
+      width: 120px
+      left: 3px
+      text-transform: uppercase
+      font-family: $sansserif
+      font-size: 14px
+      letter-spacing: 1px
+      line-height: 17px
+      @include opacity(0.7)
+
+  .product_box
+    background: #fff
+    border-color: transparent
+
+  .product_box_selected, .product_box:hover
+    background: #EE4326
+    border-color: #EE4326
+
+    img
+      width: 144px
+      left: 2px
+
+    .title_hidden
+      background: #EE4326
+      cursor: pointer
+      width: 124px
+      left: 2px
+      bottom: 0px
+
+  .products_tail_container
+    width: 72px
+    margin: 0 auto
+
+  .products_tail
+    float: left
+    width: 72px
+    height: 20px
+    background: transparent image-url('products_tail.png') no-repeat
+    margin-top: 10px
+
+  .last
+    margin-right: 0
+
+  .social_apps_fullwidth
+    width: 100%
+    border-bottom: 1px solid #ccc
+    background: #f7f7f7
+
+  .social_apps_container
+    width: 940px
+
+  .social_apps
+    padding-top: 30px
+    width: 1100px
+    margin: 0 auto
+    color: #333
+
+  .social_apps_bg
+    background: #f7f7f7
+
+  .social_apps .header
+    float: left
+    width: 635px
+    height: auto
+    h1
+      font-size: 42px
+      line-height: 32px
+      text-transform: uppercase
+
+  .tv
+    width: 955px
+    height: 506px
+    background: transparent image-url('tv.png') no-repeat
+    margin-top: 40px
+    padding: 41px 42px 0 42px
+    margin-left: 75px
+
+  .tv_inner
+    width: 711px
+    height: 445px
+    overflow: hidden
+    position: relative
+    background: #fff
+
+    img
+      position: absolute
+      left: 0px
+      top: 0px
+
+  .arrow_left
+    width: 55px
+    height: 55px
+    background: transparent image-url('arrow_left_big.png') no-repeat
+    float: left
+    margin-top: -320px
+    text-indent: -9999px
+    display: block
+    position: relative
+    left: 80px
+
+  .arrow_right
+    width: 55px
+    height: 55px
+    background: transparent image-url('arrow_right_big.png') no-repeat
+    float: right
+    margin-top: -320px
+    text-indent: -9999px
+    display: block
+    position: relative
+    left: -90px
+
+  .social_apps_tail_container
+    width: 72px
+    margin: 0 auto
+    overflow: visible
+
+  .social_apps_tail
+    float: left
+    width: 72px
+    height: 18px
+    background: transparent image-url('social_apps_tail.png') no-repeat
+    margin-top: 0
+
+.content_width
+  margin: auto
+  width: 940px
+
+  .app_overview_left
+    float: left
+    width: 605px
+    padding-top: 30px
+
+    h3
+      font-size: 28px
+      margin-bottom: 18px
+      text-transform: uppercase
+
+    .app_overview
+      font-size: 16px
+      line-height: 20px
+      font-family: $serif
+      margin-bottom: 40px
+
+    .app_overview_2
+      font-size: 14px
+      line-height: 20px
+      color: #999
+      font-family: $serif
+
+      img
+        margin-left: 3px
+
+  .app_overview_right
+    width: 245px
+    float: right
+    padding-top: 30px
+
+    .quote
+      color: #666666
+      font-family: $serif
+      font-size: 23px
+      font-style: italic
+      line-height: 32px
+
+    .attributed_to
+      color: #ccc
+      font-family: $serif
+      margin-top: 5px
+      font-size: 14px
+      font-style: italic
+      margin-bottom: 25px
+
+    .sign_up_for_email
+      background: transparent image-url('newsletter_bg.png') no-repeat
+      width: 247px
+      height: 80px
+      position: relative
+
+      #newstext
+        color: #000
+        border: 0px
+        background: transparent
+        position: absolute
+        top: 22px
+        left: 25px
+
+      #newslettersubmit
+        background: none repeat scroll 0 0 transparent
+        border: 0 none
+        cursor: pointer
+        height: 26px
+        left: 187px
+        position: absolute
+        top: 17px
+        width: 43px
+
+    .email_revolution
+      font-family: $serif
+      margin-top: 5px
+      font-size: 16px
+      font-style: italic
+
+    .page_item
+
+      a
+        color: #fff
+        text-decoration: none
+        margin-top: 5px
+        display: block
+
+      .icon
+        height: 15px
+        width: 15px !important
+        display: block
+        float: left
+        padding-right: 5px
+        margin-top: 0px !important
+        background-image: image-url('social_icons.png') !important
+        background-repeat: no-repeat !important
+
+      .adthis_button_facebook .icon
+        background-position: 0px -3px
+
+      .adthis_button_twitter .icon
+        background-position: 0px -30px
+
+      .adthis_button_googleplus .icon
+        background-position: 0px -57px
+
+      .adthis_button_tumblr .icon
+        background-position: 0px -85px
+
+      .adthis_button_linkedin .icon
+        background-position: 0px -112px
+
+      .adthis_button_pinterest .icon
+        background-position: 0px -140px
+
+.view_content_apps
+
+  .header_social_apps
+    height: 367px !important
+    background: #73c5d0 image-url('header_background_texture.png')
+
+  .header_social_apps_image
+    height: 95px
+    width: 940px
+
+  .header_social_apps_image_inner
+    height: 95px
+    position: relative
+    top: 10px
+    width: 900px
+    color: #fff
+    font-family: $headerFont
+    font-size: 42px
+    padding-top: 17px
+    text-transform: uppercase
+
+.short_content
+  width: 635px !important

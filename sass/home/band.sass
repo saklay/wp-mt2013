@@ -1,0 +1,58 @@
+@import lib/mixins
+
+
+.panel_band
+    height: 980px
+
+.bg_hand
+    background: image-url('screen2_hand.png')
+    height: 502px
+    width: 373px
+    position: absolute
+    bottom: 0px
+    right: 100px
+
+    .bg_hand_inner
+        width: 160px
+        height: 235px
+        background: #fff
+        position: relative
+        top: 63px
+        left: 153px
+        overflow: hidden
+
+        div
+            position: absolute
+            left: 0px
+            top: 0px
+            width: 160px
+            height: 235px
+
+        .screen1
+            background: image-url('band_phone_screen1.png')
+
+        .screen2
+            background: image-url('band_phone_screen2.png')
+            left: -160px
+
+.panel02_bubble
+    background: transparent image-url('panel02_bubble.png') no-repeat center center scroll
+    width: 519px
+    height: 124px
+    position: absolute
+    top: 350px
+    left: 100px
+
+.computer 
+
+    .panel_band
+        @include parallax-bg(#fafafa, 'background_band.jpg', no-repeat center center fixed)
+
+.mobile
+
+    .panel_band
+        background: image-url('background_band.jpg') no-repeat top right
+        height: 747px
+
+    .panel02_bubble
+        top: 55px

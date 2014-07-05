@@ -1,0 +1,385 @@
+@import lib/mixins
+
+@mixin animation ($name, $speed, $repeat, $track)
+    animation: $name $speed $repeat $track
+    -moz-animation: $name $speed $repeat $track
+    -webkit-animation: $name $speed $repeat $track
+    -o-animation: $name $speed $repeat $track
+
+
+.page-home
+
+    .panel_everyone_is_social
+        background: #1c1c26 image-url('background_stars.jpg') fixed
+        height: 1120px
+
+        .error
+            border-color: red
+
+        .moonwheel_container
+            width: 1150px
+            height: 1000px
+            margin: 0 auto
+            top: 90px
+            position: relative
+            
+            a
+                text-decoration: none
+            
+            h1, h2
+                color: white
+            
+            h3
+                font-size: 11px
+                color: #464646
+                text-transform: uppercase
+                text-align: center
+                margin-top: 5px
+                font-family: Georgia, Times, Times New Roman, Serif
+            
+            .moonwheel
+                background: transparent image-url('moonwheel.png')
+                width: 252px
+                height: 252px
+                float: left
+                margin-top: 312px
+                margin-left: 439px
+                position: relative
+                z-index: 99
+
+                .item_link
+                    display: block
+                    position: absolute
+                    width: 40px
+                    height: 40px
+
+                .item_link_blog
+                    left: 170px
+                    top: 60px
+
+                .item_link_social_activation
+                    left: 172px
+                    top: 139px
+
+                .item_link_dite_methodology
+                    left: 104px
+                    top: 189px
+
+                .item_link_featured_downloads
+                    top: 140px
+                    left: 36px
+
+                .item_link_join_the_toast
+                    left: 43px
+                    top: 55px
+
+                .item_link_contact
+                    left: 107px
+                    top: 23px
+                
+            .moonwheel_icon
+                background: image-url('icon_moonwheel.png')
+                width: 28px
+                height: 28px
+                margin: 0 auto
+                margin-top: 112px
+                cursor: pointer
+
+            .moonwheel_icon_off
+                background: image-url('icon_moonwheel_toast.png')
+                
+            .moonwheel_box
+                border: 1px solid #5e5e65
+                padding-left: 6px
+                padding-top: 7px
+                padding-bottom: 7px
+                background: white
+                overflow: visible
+                @include border-radius(5px)
+                
+            .spoke
+                background: #ccc
+                width: 1px
+                height: 200px
+                position: absolute
+                margin-top: 8px
+                @include opacity(0)
+                
+            .spoke_blog
+                left: 649px
+                top: 362px
+                @include rotate(52deg)
+
+            .spoke_social_activation
+                left: 665px
+                top: 478px
+                @include rotate(117deg)
+
+            .spoke_contact
+                left: 564px
+                top: 315px
+                @include rotate(360deg)
+                
+            .spoke_featured_downloads
+                left: 465px
+                top: 478px
+                @include rotate(242deg)
+
+            .spoke_join_the_toast
+                left: 475px
+                top: 362px
+                @include rotate(305deg)
+
+            .spoke_dite_methodology
+                left: 564px
+                top: 539px
+                @include rotate(180deg)
+                
+            .dite_methodology
+                position: absolute
+                left: 440px
+                top: 700px
+                width: 200px
+                height: 135px
+                @include animation(floatBox, 4s, infinite, linear)
+
+                img
+                    width: 96%
+                
+            .join_the_toast
+                position: absolute
+                left: 195px
+                top: 323px
+                z-index: 2
+                width: 200px
+                height: 135px
+                @include animation(floatBox, 5s, infinite, linear)
+
+                img
+                    width: 96%
+                
+            .blog
+                top: 330px
+                left: 713px
+                position: absolute
+                width: 233px
+                height: 135px
+                @include animation(floatBox, 3s, infinite, linear)
+
+                img
+                    width: 96%
+
+            .featured_downloads
+                position: absolute
+                left: 173px
+                top: 543px
+                width: 233px
+                height: 135px
+                @include animation(floatBox, 6s, infinite, linear)
+
+                .slides img
+                    position: absolute
+                    left: -236px
+                    top: 0px
+                    z-index: 1
+
+            .slides
+                position: relative
+                width: 180px
+                height: 120px
+                overflow: hidden
+
+                a
+                    width: 100%
+                    position: absolute
+                    left: -236px
+                    top: 0px
+                    z-index: 1
+                    display: block
+
+                img
+                    width: 100%
+                    
+                .current
+                    left: 0px
+                    z-index: 4
+
+            .social_activation
+                position: absolute
+                left: 710px
+                top: 547px
+                width: 200px
+                height: 135px
+                @include animation(floatBox, 7s, infinite, linear)
+
+                img
+                    width: 96%
+                
+            .contact
+                border: 1px solid #5e5e65
+                padding: 10px
+                background: #f7f7f7
+                width: 458px
+                height: 210px
+                position: absolute
+                left: 320px
+                top: 84px    
+                @include border-radius(5px)
+                @include animation(floatBox, 5s, infinite, linear)
+
+                input[type="text"], select
+                    padding: 5px 10px
+                
+                .contact_form
+                    float: left
+                    width: 388px
+                    color: #404041
+                    font-size: 0.8em
+                    font-weight: bold
+                    font-family: Georgia, Time, Times New Roman, Serif
+                    
+                    .icon_contactus
+                        float: left
+                        background: transparent image-url('icon_contactus.png') no-repeat top left
+                        width: 50px
+                        height: 50px
+                
+                    .title
+                        float: left
+                        margin: 10px 0 0 15px
+                        color: #656565
+                        font-size: 28px
+                        font-weight: normal
+                        
+                    .form_left
+                        float: left
+                        width: 185px
+                        
+                    .form_right
+                        float: left
+                        width: 160px
+                        margin-left: 12px
+                        
+                .contact_icons
+                    float: right
+                    background: transparent image-url('contactus_divider.png') no-repeat top left
+                    width: 40px
+                    padding-left: 25px
+
+                    a div
+                        width: 28px
+                        height: 28px
+                        margin-bottom: 5px
+                        cursor: hand
+                        text-indent: -9999px
+                    
+                    .icon_pinterest
+                        background: transparent image-url('icon_pinterest.png') no-repeat
+                        
+                    .icon_facebook
+                        background: transparent image-url('icon_facebook.png') no-repeat
+                        
+                    .icon_twitter
+                        background: transparent image-url('icon_twitter.png') no-repeat
+                        
+                    .icon_youtube
+                        background: transparent image-url('icon_youtube.png') no-repeat
+                        
+                    .icon_linkedin
+                        background: transparent image-url('icon_linkedin.png') no-repeat
+                        
+                    .icon_plus
+                        background: transparent image-url('icon_plus.png') no-repeat
+                        
+            .moonwheel_button
+                float: right
+                clear: both
+                background: #e93f07
+                min-width: 110px
+                margin-right: 10px
+                padding: 3px 10px
+                font-size: 14px
+                letter-spacing: 1px
+                font-family: $headerFont
+                color: white
+                text-transform: uppercase
+                text-align: center
+                cursor: pointer
+
+                a
+                    color: #fff
+                    text-decoration: none
+                
+            .ebook_ribbon
+                background: transparent image-url('panel01_ebook_ribbon.png')
+                width: 66px
+                height: 66px
+                float: left
+                position: relative
+                margin-top: -165px
+                margin-left: -9px
+                z-index: 6
+                display: none
+                
+            .arrow_left
+                background: transparent image-url('arrow_left.png')
+                width: 38px
+                height: 38px
+                float: left
+                position: relative
+                margin-top: -100px
+                margin-left: -25px
+                cursor: pointer
+                z-index: 9
+                
+            .arrow_right
+                background: transparent image-url('arrow_right.png')
+                width: 38px
+                height: 38px
+                float: right
+                position: relative
+                margin-top: -100px
+                margin-right: -15px
+                cursor: pointer
+                z-index: 9
+
+    .top_moon
+        width: 100%
+        position: absolute
+        top: 0px
+
+    .mobile .spoke
+        display: none !important
+
+@keyframes floatBox
+    0%
+        margin-top: 0px
+        margin-left: 0px
+    40%
+        margin-top: 10px
+        margin-left: 5px
+    100%
+        margin-top: 0px
+        margin-left: 0px
+
+@-moz-keyframes floatBox
+    0%
+        margin-top: 0px
+        margin-left: 0px
+    40%
+        margin-top: 10px
+        margin-left: 5px
+    100%
+        margin-top: 0px
+        margin-left: 0px
+
+@-webkit-keyframes floatBox
+    0%
+        margin-top: 0px
+        margin-left: 0px
+    40%
+        margin-top: 10px
+        margin-left: 5px
+    100%
+        margin-top: 0px
+        margin-left: 0px

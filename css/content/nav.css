@@ -1,0 +1,150 @@
+.strip {
+        background-image: url('/wp-content/themes/moontoast2013/images/home-2/home/header-bg.png');
+        background-repeat: repeat;
+
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        height: 80px;
+    }
+
+.arrow-button {
+    display: block;
+    cursor: pointer;
+
+    background: #fa4c24; /* Old browsers */
+    background: -moz-linear-gradient(top,  #fa4c24 56%, #dc1d10 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(56%,#fa4c24), color-stop(100%,#dc1d10)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #fa4c24 56%,#dc1d10 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #fa4c24 56%,#dc1d10 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #fa4c24 56%,#dc1d10 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #fa4c24 56%,#dc1d10 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa4c24', endColorstr='#dc1d10',GradientType=0 ); /* IE6-9 */
+
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+
+    border: 1px solid #911700;
+    text-transform: uppercase;
+}
+
+.arrow-button:active {
+    background: #dc1d10; /* Old browsers */
+    background: -moz-linear-gradient(top,  #dc1d10 0%, #fa4c24 44%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dc1d10), color-stop(44%,#fa4c24)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #dc1d10 0%,#fa4c24 44%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #dc1d10 0%,#fa4c24 44%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #dc1d10 0%,#fa4c24 44%); /* IE10+ */
+    background: linear-gradient(to bottom,  #dc1d10 0%,#fa4c24 44%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dc1d10', endColorstr='#fa4c24',GradientType=0 ); /* IE6-9 */
+}
+
+.arrow-button .arrow-left {
+    float: left;
+    width: 100px;
+
+    border-right: 1px solid #911700;
+
+    padding: 7px 10px 7px 10px;
+    text-align: center;
+
+    font-size: 13px;
+    font-family: 'museo_slab_300';
+    color: #FFFFFF;
+    -moz-text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    -webkit-text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    -o-text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    -ms-text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.arrow-button .arrow-right {
+    float: left;
+
+    background-image: url('/wp-content/themes/moontoast2013/images/home-2/widgets/button-arrow.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    width: 28px;
+    height: 17px;
+
+    margin-top: 4px;
+}
+    
+.logo {
+        background-image: url('/wp-content/themes/moontoast2013/images/home-2/home/logo.png');
+        background-repeat: no-repeat;
+
+        display: block;
+        width: 279px;
+        height: 54px;
+
+        float: left;
+        margin-top: 13px;
+    }
+
+    .nav {
+        float: right;
+        font-family: lft-etica;
+    }
+
+        .nav > li {
+            float: left;
+        }
+
+            .nav > li > a {
+                display: table-cell;
+                vertical-align: middle;
+
+                height: 80px;
+                padding: 0 24px 0 24px;
+                font-size: 17px;
+                color: #FFFFFF;
+            }
+
+            .nav > li > a:hover, .nav > li.hover > a {
+                background-image: url('/wp-content/themes/moontoast2013/images/home-2/black-stripe-bg.png');
+                background-repeat: repeat;
+            }
+
+            .nav > li  .arrow-button {
+                margin-top: 25px;
+                margin-left: 25px;
+            }
+
+            .nav > li  .arrow-button .arrow-left {
+                width: 120px;
+                font-size: 13px;
+            }
+
+            .nav .subnav {
+                width: 190px;
+                background-color: #ef4323;
+                position: absolute;
+                z-index: 900;
+                display: none;
+            }
+
+                .nav .subnav li {
+                }
+
+                .nav .subnav li a {
+                    display: block;
+                    padding: 10px 15px 10px 15px;
+                    border-top: 1px solid #151515;
+
+                    font-size: 17px;
+                    color: #FFFFFF;
+
+                    background-image: url('/wp-content/themes/moontoast2013/images/home-2/black-stripe-bg.png');
+                    background-repeat: repeat;
+                }   
+                
+                .nav .subnav li a:hover {
+                    border-top: 1px solid #f26b52;
+                    background-color: #ef4323;
+                    background-image: none;
+                }Œ

@@ -1,0 +1,1 @@
+define(["backbone","underscore","_js/views/home/analytics","_js/views/home/band","_js/views/home/frisbee","_js/views/home/moonwheel","_js/views/home/social_apps","_js/views/home/social_marketing","_js/views/home/video"],function(e,t,n,r,i,s,o,u,a){return e.View.extend({render:function(){var e=[new n,new r,new i,new s,new o,new u,new a];t.each(e,function(e){e.render()})}})})
